@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Bisht - Portfolio</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body >
+    <header>
+        <div class="intro"> Hi, I'm Abhishek Bisht</div>
+        <div class="typing-text"> </div>
+        <button id="themebtn">
+          <svg class="sun" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q67 0 113.5-46.5T640-480q0-67-46.5-113.5T480-640q-67 0-113.5 46.5T320-480q0 67 46.5 113.5T480-320Zm0-160Z"/></svg>
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+        </button>
+    </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am currently pursuing a Bachelor of Science in Computer Science from Graphic Era Deemed to be University, with a graduation date set for 2026. I have a strong foundation in web development and programming, eager to apply my skills in real-world projects. My interests include software development, web technologies, and continuous learning in the tech field.</p>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-items">
+        <div class="edu-item">
+        
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>Graphic Era Deemed to be University - Graduation: 2022</p>
+          <p>Location: Dehradun, India</p>
+          <p>Achievements: Dean's List, Member of the Coding Club, participated in Hackathons.</p>
+        </div>
+        <div class="edu-item">
+          <h3>Intermediate</h3>
+          <p>Social Baluni Public School - Graduation: 2022</p>
+          <p>Location: Dehradun, India</p>
+          <p>Scores: 80.2%</p>
+        </div>
+        <div class="edu-item">
+          <h3>High School</h3>
+          <p>Social Baluni Public School - Graduation: 2020</p>
+          <p>Location: Dehradun, India</p>
+          <p>Scores: 86.4%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: C, C++, Python, HTML, CSS, JavaScript</li>
+        <li>Databases: FireDB, MySQL, MongoDB</li>
+        <li>Tools: VS Code, Git, GitHub, XAMPP</li>
+        <li>Soft Skills: Teamwork, Hardworking, Enthusiastic</li>
+        <li>Interests: Reading, Badminton, Editing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="card">
+          <h3>E-commerce Website</h3>
+          <p>A web-based E-Commerce application with robust authentication.</p>
+          <p>Technology Used: CSS, React.js, Firebase</p>
+        </div>
+        <div class="card">
+          <h3>Secure Ephemeral Workspace</h3>
+          <p>A tool for creating isolated, reversible workspaces that track and manage file changes.</p>
+          <p>Technology Used: CSS, Electron JS, Python</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST" class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+        
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+        
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>copyright &copy; Abhishek Bisht</p>
+      <a href="https://github.com/abhibisht1005" target="_blank">
+        <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" class="github-logo" width="40" height="40" >
+      </a>
+      </div>
+  </footer>
+
+  <script src="test.js"></script>
+</body>
+</html>
