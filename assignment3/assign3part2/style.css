@@ -1,0 +1,204 @@
+/* General Page */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #6dd5ed);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Branding Header */
+.brand-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+  -webkit-filter:invert();
+}
+.brand-logo:hover {
+  transform: scale(1.1);
+}
+
+.brand-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Container Box */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.container:hover {
+  transform: translateY(-4px);
+}
+
+/* Input Field */
+input[type="email"] {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+input::placeholder {
+  color: rgba(255,255,255,0.8);
+}
+input:focus {
+  border: 1px solid #6dd5ed;
+  background: rgba(255,255,255,0.3);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  transform: scale(1.02);
+}
+
+/* Card Style */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  
+  border-radius: 12px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 700px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.3s ease-in-out;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Student Photo */
+.card img {
+  max-width: 130px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Assignment Status */
+.assignment-status {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.assignment-status span {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Spinner */
+.spinner {
+  border: 6px solid rgba(255,255,255,0.2);
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.hidden { display: none; }
+
+/* Toast */
+.toast {
+    display: flex;
+  visibility: hidden;
+  min-width: 220px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position:absolute;
+  
+  z-index: 999;
+  left: 50%;
+  
+  bottom: auto;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+.toast.show {
+  visibility: visible;
+  opacity: 0.75;
+  
+  
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-title { font-size: 22px; }
+  .container { padding: 20px; margin: 20px; }
+  .card { padding: 20px; }
+}
+@media (max-width: 480px) {
+  .brand-header { flex-direction: column; }
+  .brand-logo { height: 40px; }
+  button, input { font-size: 14px; }
+}
